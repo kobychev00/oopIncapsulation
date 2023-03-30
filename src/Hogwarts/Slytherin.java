@@ -19,12 +19,18 @@ public class Slytherin extends hogwarts {
                      int resourcefulness,
                      int lustForPower) {
         super(name, surname, magicPower, transgrestionLength);
+        this.trick = trick;
+        this.determination = determination;
+        this.ambition = ambition;
+        this.resourcefulness = resourcefulness;
+        this.lustForPower = lustForPower;
+
     }
 
     @Override
     public void printInfo() {
         System.out.println("name = " + getName());
-        System.out.println("surname = " + getName());
+        System.out.println("surname = " + getSurname());
         System.out.println("magicPower = " + getMagicPower());
         System.out.println("trangrestionLength = " + getTransgrestionLength());
         System.out.println("trick = " + trick);

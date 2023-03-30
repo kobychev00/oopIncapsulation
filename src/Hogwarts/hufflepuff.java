@@ -13,12 +13,15 @@ public class hufflepuff extends hogwarts {
                       int loyalty,
                       int honesty) {
         super(name, surname, magicPower, transgrestionLength);
+        this.industriousness = industriousness;
+        this.loyalty = loyalty;
+        this.honesty = honesty;
     }
 
     @Override
     public void printInfo() {
         System.out.println("name = " + getName());
-        System.out.println("surname = " + getName());
+        System.out.println("surname = " + getSurname());
         System.out.println("magicPower = " + getMagicPower());
         System.out.println("trangrestionLength = " + getTransgrestionLength());
         System.out.println("industriousness = " + industriousness);

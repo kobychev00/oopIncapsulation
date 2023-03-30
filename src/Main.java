@@ -102,6 +102,7 @@ public class Main {
 
         marcusBelby.compareRavenclaw(padmaPatil);
         marcusBelby.printInfo();
+        harryPotter.printInfo();
 
     }
 

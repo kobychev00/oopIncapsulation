@@ -15,12 +15,15 @@ public class Ravenclaw extends hogwarts {
                      int wisdom,
                      int art) {
         super(name, surname, magicPower, transgrestionLength);
+        this.mind = mind;
+        this.wisdom = wisdom;
+        this.art = art;
     }
 
     @Override
     public void printInfo() {
         System.out.println("name = " + getName());
-        System.out.println("surname = " + getName());
+        System.out.println("surname = " + getSurname());
         System.out.println("magicPower = " + getMagicPower());
         System.out.println("trangrestionLength = " + getTransgrestionLength());
         System.out.println("mind = " + mind);

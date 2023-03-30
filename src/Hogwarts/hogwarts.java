@@ -50,7 +50,7 @@ public abstract class hogwarts {
 
     public void printInfo() {
         System.out.println("name = " + getName());
-        System.out.println("surname = " + getName());
+        System.out.println("surname = " + getSurname());
         System.out.println("magicPower = " + getMagicPower());
         System.out.println("trangrestionLength = " + getTransgrestionLength());
     }
@@ -69,18 +69,18 @@ public abstract class hogwarts {
         if (ability1 > ability2) {
             System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", 
                     getName(), 
-                    hogwarts.getName(), 
+                    hogwarts.getSurname(),
                     ability1, 
                     ability2);
         } else if (ability2 > ability1) {
             System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n",
-                    hogwarts.getName(), 
+                    hogwarts.getSurname(),
                     getName(), 
                     ability2, 
                     ability1);
         } else {
             System.out.printf("Студент %s такой же, как студент %s: %d VS %d%n",
-                    hogwarts.getName(), 
+                    hogwarts.getSurname(),
                     getName(), 
                     ability2, 
                     ability1);
@@ -93,25 +93,25 @@ public abstract class hogwarts {
         if (ability1 > ability2) {
             System.out.printf("%s %s лучше, чем %s %s: %d VS %d%n", 
                     tribleName(), 
-                    getName(),
+                    getSurname(),
                     tribleName(),
-                    hogwarts.getName(), 
+                    hogwarts.getSurname(),
                     ability1, 
                     ability2);
         } else if (ability2 > ability1) {
             System.out.printf("%s %s лучше, чем %s %s: %d VS %d%n",
                     tribleName(),
-                    hogwarts.getName(),
+                    hogwarts.getSurname(),
                     tribleName(),
-                    getName(), 
+                    getSurname(),
                     ability2, 
                     ability1);
         } else {
             System.out.printf("%s %s такой же, как %s %s: %d VS %d%n",
                     tribleName(),
-                    hogwarts.getName(),
+                    hogwarts.getSurname(),
                     tribleName(),
-                    getName(), 
+                    getSurname(),
                     ability2, 
                     ability1);
         }

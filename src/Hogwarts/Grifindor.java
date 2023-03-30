@@ -14,27 +14,21 @@ public class Grifindor extends hogwarts {
                      int honor,
                      int bravery) {
         super(name, surname, magicPower, transgrestionLength);
-    }
-
-    public void comparasionGrifindor() {
-
+        this.nobility = nobility;
+        this.honor = honor;
+        this.bravery = bravery;
     }
 
     @Override
     public void printInfo() {
         System.out.println("name = " + getName());
-        System.out.println("surname = " + getName());
+        System.out.println("surname = " + getSurname());
         System.out.println("magicPower = " + getMagicPower());
         System.out.println("trangrestionLength = " + getTransgrestionLength());
         System.out.println("nobility = " + getNobility() );
         System.out.println("honor = " + getHonor());
         System.out.println("bravery = " + getBravery());
     }
-
-    public void comprasionGrifindor() {
-
-    }
-
 
     public int getNobility() {
         return nobility;
