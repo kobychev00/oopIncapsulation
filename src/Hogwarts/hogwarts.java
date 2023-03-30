@@ -63,7 +63,7 @@ public abstract class hogwarts {
 
     public abstract String tribleName();
     
-    private void compareHogwarts(hogwarts hogwarts) {
+    public void compareHogwarts(hogwarts hogwarts) {
         int ability1 = baseAbility();
         int ability2 = hogwarts.baseAbility();
         if (ability1 > ability2) {
